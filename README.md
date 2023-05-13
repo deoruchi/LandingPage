@@ -24,7 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Alt text](<src/Screenshot%20(518).png>)
+![Alt text](<src/Screenshot%20(519).png>)
+
+![Alt text](<src/Screenshot%20(520).png>)
+![Alt text](<src/Screenshot%20(521).png>)
 
 ### Links
 
