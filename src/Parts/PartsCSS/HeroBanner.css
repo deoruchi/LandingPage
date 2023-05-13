@@ -1,0 +1,112 @@
+.banner-style {
+  background-image: url(../../images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  padding: 0 5%;
+}
+.banner-word {
+  margin-block: 12%;
+  color: white;
+  text-align: left;
+  border: solid white 2px;
+  width: 50%;
+}
+
+.banner-letters {
+  margin: 5% 4%;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+/* layout for the heading */
+
+.heading-menus-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3% 0;
+}
+
+/*navigation bar at the heading */
+.container-menu2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  margin-inline: 2%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 730px) {
+  .banner-style {
+    height: 100vh;
+    background-image: url(../../images/mobile/image-hero.jpg);
+  }
+
+  .banner-word {
+    margin-top: 25vh;
+    width: 100%;
+  }
+  .banner-letters {
+    margin: 5%;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .heading-menus-logo {
+    padding: 12% 0;
+  }
+
+  /*css for the Menu bar*/
+
+  .heading-menu-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu_back {
+    background-color: black;
+    padding: 10% 5%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .Menu,
+  .Menu2 {
+    background-color: transparent;
+    border: none;
+  }
+
+  .logo-mob {
+    width: 40%;
+  }
+
+  .font-own {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .font-own li {
+    margin: 2% 0;
+  }
+  .font-own li :hover {
+    background-color: white;
+    color: black;
+    width: 40%;
+    padding: 2%;
+  }
+  .item-container {
+    text-align: left;
+    list-style: none;
+    margin: 40% 0;
+  }
+}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+
+import Footer from "./Parts/Footer";
+import HeroBaanner from "./Parts/HeroBaanner";
+import Images from "./Parts/Images";
+import Intro from "./Parts/Intro";
+import MenuBar from "./Parts/MenuBar";
+import Window1 from "./Parts/Window1";
 
 function App() {
+  const [change, setChange] = useState(false);
+  function handleChange(e) {
+    setChange(e);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {change ? (
+        <MenuBar func={handleChange} />
+      ) : (
+        <Window1 func={handleChange} />
+      )}
     </div>
   );
 }
